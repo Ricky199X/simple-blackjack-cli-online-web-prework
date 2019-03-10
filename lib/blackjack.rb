@@ -62,9 +62,9 @@ def runner
   # display_card_total UNTIL card_total > 21, then runs the end_game method
   welcome
   initial_round
+  display_card_total
   
   until card_total > 21
-    display_card_total
     hit?
     
     break if card
