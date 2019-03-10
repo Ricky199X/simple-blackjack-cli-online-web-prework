@@ -66,7 +66,7 @@ def runner
   display_card_total
   
   until card_total > 21
-    hit?
+    card_total = hit?
     
     break card_total > 21
   end
