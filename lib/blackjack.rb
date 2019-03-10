@@ -60,10 +60,11 @@ def runner
   # initial_round
   # hit?
   # display_card_total UNTIL card_total > 21, then runs the end_game method
+  
   welcome
   sleep(0.5)
-  card_total = initial_round
-  display_card_total
+  cards = initial_round
+  display_card_total(cards)
   
   until card_total > 21
     card_total = hit?(card_total)
