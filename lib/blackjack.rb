@@ -64,12 +64,11 @@ def runner
   initial_round
   display_card_total
   
-  count = card_total
-  until count > 21
+  until card_total > 21
     hit?
     
-    break if card
+    break card_total > 21
   end
-    
+  end_game
 end
     
