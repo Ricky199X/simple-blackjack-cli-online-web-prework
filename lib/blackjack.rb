@@ -63,13 +63,13 @@ def runner
   
   welcome
   sleep(0.5)
-  cards = initial_round
-  display_card_total(cards)
+  card_total = initial_round
+  display_card_total(card_total)
   
-  until cards > 21
-    cards = hit?(cards)
-    display_card_total(cards)
+  until card_total > 21
+    card_total = hit?(card_total)
+    display_card_total(card_total)
   end
-  end_game(cards)
+  end_game(card_total)
 end
     
